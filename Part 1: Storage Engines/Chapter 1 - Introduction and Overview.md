@@ -269,6 +269,8 @@ Storage structures have 3 variables:
 
 1. Is the "Lifecycle of a query" part above correct? (Especially in the 2nd half of the cycle where response is to be returned)
 
+[Update] Answer: Yes, it is correct.
+
 Drop me an email if you would like to answer any of the doubts, or discuss: [Let's talk!](mailto:me@akjn.dev?subject=[Chapter%201]%20Doubts)
 
 ## Things to Read
@@ -282,4 +284,31 @@ Drop me an email if you would like to answer any of the doubts, or discuss: [Let
 
 This section contains anything worth mentioning that came up as part of the weekly reading group discussion.
 
-N/A at the moment. Will update accordingly.
+
+1. What is a possible migration plan from Database-A to Database-B ?
+
+    i.  A very interesting story of a migration from Couchbase to Aerospike: [Large Scale NoSQL Database Migration Under Fire](https://medium.com/appsflyerengineering/large-scale-nosql-database-migration-under-fire-bf298c3c2e47)
+
+    ii. [Online migrations at scale](https://stripe.com/blog/online-migrations)
+
+2. If you wonder about the rationale behind design decision of DBs implementing their own data cache (buffer pools), and forgoing pagecache of OS and using direct I/O on underlying filesystem, here's a good paper by Andy Pavlo: https://db.cs.cmu.edu/papers/2022/cidr2022-p13-crotty.pdf
+
+3. Request lifecycle
+
+An interesting example was mentioned by someone on my doubt on request lifecycle.
+
+Once you arrive at the execution engine, it's not so linear.
+
+As an example, take `SELECT * FROM foo WHERE bar IN (SELECT bar FROM boop)`.
+
+The execution engine will end up with a plan like:
+```
+1. Read table boop's bar field into List A.
+2. Sort List A (to make step 4's search faster).
+3. Read each row from table foo.
+4. Emit each all the fields from foo into the result set if foo.bar in List A.
+```
+
+So we would have the execution engine reading from the storage engine in (1), doing some internal processing, then going back out to the storage engine to read table foo's rows in step (3). There's an interaction between the two of them as execution proceeds. As we increase complexity of queries, introduce indexes, etc etc etc, it's very easily going to get complicated. We might even have several storage engines involved in a single query (eg, indexes and primary data in different engines).
+
+Step 4 might emit the rows directly to the client, or it might buffer them before returning. If there's a sort, group etc. involved it might _have_ to buffer the results.

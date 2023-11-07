@@ -21,7 +21,7 @@ For each chapter notes, you can also expect:
 1. My unanswered questions from the chapter. I will add a direct `mailto` link to my email address, so that you can answer them if you know the answer. If you are not sure, you can still drop me an email and I'd be happy to discuss it.
 2. As and when I find answers to my unanswered questions, I will update the notes with the answers.
 3. Some other things to read about, if you are interested in the topic. This is extremely subjective, so you might not find it useful. But I'd still add it, just in case.
-4. Reading group discussion: I will try to add some interesting points that came up during the reading group discussion. This is also extremely subjective, so you might not find it useful. But I'd still add it, just in case.
+4. Reading group discussion: I will try to add some interesting points that came up during the reading group discussion. This is also extremely subjective, so you might not find it useful. But I'd still add it, just in case. I aim to add these when I am updating the notes for the next chapter.
 
 ## What should you NOT expect from this repository?
 
