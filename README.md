@@ -8,6 +8,7 @@ This repository contains my notes from reading [Database Internals](https://www.
 ### [Part 1: Storage Engines](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Part%201%20-%20Storage%20Engines.md)
 
 - [Chapter 1: Introduction and Overview](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%201%20-%20Introduction%20and%20Overview.md)
+- [Chapter 2: B-Tree Basics](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%202%20-%20B-Tree%20Basics.md)
 
 ## What can you expect from this repository?
 
