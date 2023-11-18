@@ -155,7 +155,27 @@ Pointer between 11 and _ points to a node having: 15 25 30.
 
 1. Page 35 says "B-Trees are a page organization technique (i.e., they are used to organize and navigate fixed-size pages), we often use terms node and page interchangeably". What does it mean? How are nodes equivalent to pages?
 
+[Update] Answer: We understand this better in chapter 3.
+
+Other answers I got from other members of the reading group:
+As far as implementations go, databases talk in terms of pages instead of blocks. For instance, in SQLite's BTree implementation, they exclusively talk in terms of pages. The size of the page can be between 512 bytes and 65536 bytes, and each page contains pointers to other pages.
+
+In the case of Postgres, things become a bit more complicated. For instance, they say they split a heap or index file in blocks. But a block can be unformatted, whereas a page is a well formed slotted page. All the access method implementations (including BTree) work with pages.
+
 2. SSD has page inside blocks. But in chapter 1, we saw that database had 1 page = multiple blocks? Any historic context on why we have this discrepancy in naming? Any intuitive explanation for this?
+
+[Update] Answer: It's just confusing, but it's what it is.
+
+Other answers I got from other members of the reading group:
+It seems that everyone uses the terms differently depending on context. For example, there is the context of the physical disk, of the interface the disk uses to communicate (e.g. NVMe, NTFS, etc.), the file system, and databases. It doesn't help that every vendor at every layer there often uses a different or varied term too.
+
+Databases mostly seem to use the term "page" to refer to the minimum number of bytes they read or write. Whereas "block" seems to more refer to either the file system, disk protocol (NVMe, etc.), or physical disk minimums. And "page" is always a multiple of the block size so that you aren't reading/writing partial blocks which incurs additional IO.
+
+Various sites to increase the confusion even further:
+- https://superuser.com/questions/1110355/what-is-the-difference-between-a-disk-block-and-a-sector
+- https://www.reddit.com/r/sysadmin/comments/37a8xi/eli5_the_differences_between_a_chunk_page_block/
+- https://dba.stackexchange.com/a/241042
+- https://wiki.archlinux.org/title/Advanced_Format
 
 Drop me an email if you would like to answer any of the doubts, or discuss: [Let's talk!](mailto:me@akjn.dev?subject=[Chapter%202]%20Doubts)
 
@@ -165,4 +185,10 @@ NA at the moment.
 
 ## Reading group discussion
 
-This section contains anything worth mentioning that came up as part of the weekly reading group discussion. I will update this section while adding notes for the next chapter.
+This section contains anything worth mentioning that came up as part of the weekly reading group discussion.
+
+1. There is a good explanation of B-Trees in the Introduction to Algorithms book by Cormen that you may have lying around from school or work. It includes a nice explanation of how (spinning) disks work which is rare for an algorithms book.
+
+2. Good explanation of Red-Black and 2-3 trees: https://www.cs.umd.edu/class/fall2019/cmsc420-0201/Lects/lect06-aa.pdf
+
+3. Fly.io has a great blog, here's one from Ben Johnson about SQLite btrees: https://fly.io/blog/sqlite-internals-btree/
