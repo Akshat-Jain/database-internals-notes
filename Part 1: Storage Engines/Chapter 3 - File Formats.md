@@ -252,11 +252,19 @@ Trailer
 
 The book seems to indicate that the variable-sized fields would also be part of the structure, but I am not sure how that would work. I think I am missing something here.
 
+[Update] Answer by Alex Petrov (author): What I tried to say was that the structure holding the employee data can have first a block with fixed data followed by the variable size data. 
+
 2. On a similar note as question 1, what is the difference between "offset" and "length"? Context: The book says "To avoid calculations involving multiple fields, we can encode both offset and length to the fixed-size area. In this case, we can locate any variable-size field separately."
+
+[Update]
+Offset = address in memory where the item starts
+Length = Length of the item in bytes.
 
 3. Why is "[byte] flags" present in the representation of a Key-Value cell on page 55? What is the purpose of this? Why was it not present in the representation of a Key cell on page 54?
 
 4. In Figure 3-9, it should be "Occupied cells are shown in gray." instead of "Occupied pages are shown in gray."?
+
+[Update] Yes. It's a typo.
 
 ## Things to Read
 
@@ -264,4 +272,4 @@ NA at the moment.
 
 ## Reading group discussion
 
-This section contains anything worth mentioning that came up as part of the weekly reading group discussion. I will update it when I am adding notes for the next chapter.
+Nothing "extra" was discussed that is worth mentioning here.
