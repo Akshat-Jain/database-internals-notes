@@ -11,6 +11,7 @@ This repository contains my notes from reading [Database Internals](https://www.
 - [Chapter 2: B-Tree Basics](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%202%20-%20B-Tree%20Basics.md)
 - [Chapter 3: File Formats](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%203%20-%20File%20Formats.md)
 - [Chapter 4: Implementing B-Trees](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%204%20-%20Implementing%20B-Trees.md)
+- [Chapter 5: Transaction Processing and Recovery](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%205%20-%20Transaction%20Processing%20and%20Recovery.md)
 
 ## What can you expect from this repository?
 
