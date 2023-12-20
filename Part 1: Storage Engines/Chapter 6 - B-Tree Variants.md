@@ -202,4 +202,4 @@ NA at the moment.
 
 ## Reading group discussion
 
-This section contains anything worth mentioning that came up as part of the weekly reading group discussion. I will update it when I am adding notes for the next chapter.
+1. Andy Pavlo has a really good paper on implementing Bw-trees: [Link](https://www.cs.cmu.edu/~huanche1/publications/open_bwtree.pdf)

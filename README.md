@@ -13,6 +13,7 @@ This repository contains my notes from reading [Database Internals](https://www.
 - [Chapter 4: Implementing B-Trees](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%204%20-%20Implementing%20B-Trees.md)
 - [Chapter 5: Transaction Processing and Recovery](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%205%20-%20Transaction%20Processing%20and%20Recovery.md)
 - [Chapter 6: B-Tree Variants](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%206%20-%20B-Tree%20Variants.md)
+- [Chapter 7: Log-Structured Storage](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%207%20-%20Log-Structured%20Storage.md)
 
 ## What can you expect from this repository?
 
