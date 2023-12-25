@@ -15,6 +15,10 @@ This repository contains my notes from reading [Database Internals](https://www.
 - [Chapter 6: B-Tree Variants](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%206%20-%20B-Tree%20Variants.md)
 - [Chapter 7: Log-Structured Storage](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%201%3A%20Storage%20Engines/Chapter%207%20-%20Log-Structured%20Storage.md)
 
+### [Part 2: Distributed Systems](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Part%202%20-%20Distributed%20Systems.md)
+
+- [Chapter 8: Introduction and Overview](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%208%20-%20Introduction%20and%20Overview.md)
+
 ## What can you expect from this repository?
 
 1. We plan on reading a chapter per week. I will try my best to update this repository with my notes from the chapter every week. ETA: Sunday midnight IST for any given week.
