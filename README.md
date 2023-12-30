@@ -18,6 +18,7 @@ This repository contains my notes from reading [Database Internals](https://www.
 ### [Part 2: Distributed Systems](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Part%202%20-%20Distributed%20Systems.md)
 
 - [Chapter 8: Introduction and Overview](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%208%20-%20Introduction%20and%20Overview.md)
+- [Chapter 9: Failure Detection](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%209%20-%20Failure%20Detection.md)
 
 ## What can you expect from this repository?
 
