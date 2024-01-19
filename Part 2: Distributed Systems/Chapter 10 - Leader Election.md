@@ -100,7 +100,24 @@ Steps:
 
 1. It was mentioned that some algorithms (ZAB, Multi-Paxos, Raft) use temporary leaders to reduce the number of messages required to reach consensus. Does this simply mean they re-elect a leader every now and then? If yes, how does it help?
 
+[Update] Got a couple of answers by folks in the reading group discussion thread:
+
+Answer 1: I think we'll get to Raft in another chapter, but yes, they do elect a new leader every so often. A leader (A) won't itself step down until it sees another node (B) claiming to be a leader for a more recent election than (A) is aware of. A follower won't attempt to become a leader until it hasn't heard from that leader within a period of time. The leader is responsible for sending out periodic heartbeats to attempt to avoid followers attempting to become leaders.
+
+Answer 2: Contributing a bit to answer 1 - By utilizing the leader, the algorithms you mention put more pressure on one node but can reduce the number of messages exchanged to reach consensus.
+The leader decides the sequence number and replicates that, so it does not need additional round-trips between the members.
+There are also a few leaderless (or, in contrast, multi-leader) algorithms out there.
+Each employs different techniques to reduce the round-trip of messages to deal with no dedicated node ordering everything and usually has a worst-case for contention.
+I believe we'll look at some of that in the following chapters.
+
 2. In Candidate/Ordinary Optimization, can the candidate nodes not initiate an election round? If yes, why not?
+
+[Update] Got an answer by someone in the reading group discussion thread:
+
+From my understanding, the candidates never initiate an election. All the responsibility is on the ordinary set.
+I believe an election does not start if the FD doesn't suspect a leader, and the delta parameter would help in false-positive cases.
+With the candidates acting reactively to ordinary requests, the number of false positives also reduces since it has fewer nodes starting the election.
+This is only an assumption on my part, but it seems a trade-off. A more stable algorithm, but it would take longer to identify and replace a failed leader.
 
 ## Things to Read
 
