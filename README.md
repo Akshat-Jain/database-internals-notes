@@ -21,6 +21,7 @@ This repository contains my notes from reading [Database Internals](https://www.
 - [Chapter 9: Failure Detection](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%209%20-%20Failure%20Detection.md)
 - [Chapter 10: Leader Election](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2010%20-%20Leader%20Election.md)
 - [Chapter 11: Replication and Consistency](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2011%20-%20Replication%20and%20Consistency.md)
+- [Chapter 12: Anti-Entropy and Dissemination](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2012%20-%20Anti-Entropy%20and%20Dissemination.md)
 
 ## What can you expect from this repository?
 

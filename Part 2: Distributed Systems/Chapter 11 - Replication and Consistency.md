@@ -190,4 +190,4 @@ NA at the moment.
 
 ## Reading group discussion
 
-NA at the moment.
+1. A real life example of consistency came up at work in the context of a batch job that has multiple readers pulling from a GCS bucket: https://cloud.google.com/storage/docs/consistency
