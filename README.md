@@ -23,6 +23,7 @@ This repository contains my notes from reading [Database Internals](https://www.
 - [Chapter 11: Replication and Consistency](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2011%20-%20Replication%20and%20Consistency.md)
 - [Chapter 12: Anti-Entropy and Dissemination](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2012%20-%20Anti-Entropy%20and%20Dissemination.md)
 - [Chapter 13: Distributed Transactions](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2013%20-%20Distributed%20Transactions.md)
+- [Chapter 14: Consensus](https://github.com/Akshat-Jain/database-internals-notes/blob/main/Part%202%3A%20Distributed%20Systems/Chapter%2014%20-%20Consensus.md)
 
 ## What can you expect from this repository?
 
