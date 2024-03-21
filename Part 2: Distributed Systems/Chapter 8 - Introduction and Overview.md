@@ -58,7 +58,7 @@ We cannot assume that clocks on different remote machines are in sync.
 
 **Need to Handle Failures**
 
-- In a long-running system, nodes might be done for maintenance.
+- In a long-running system, nodes might be down for maintenance.
 - Some distributed algorithms use heartbeat protocols and failure detectors to detect the state of the nodes.
 
 **Network Partitions and Partial Failures**
